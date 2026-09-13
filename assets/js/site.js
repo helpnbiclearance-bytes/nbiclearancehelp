@@ -1,0 +1,3 @@
+
+const menuBtn=document.querySelector('.menu');const nav=document.querySelector('.nav');const closeMenu=()=>{if(!nav||!menuBtn)return;nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.setAttribute('aria-label','Open menu')};if(menuBtn&&nav){menuBtn.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(isOpen));menuBtn.setAttribute('aria-label',isOpen?'Close menu':'Open menu')});document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu()});window.addEventListener('resize',()=>{if(window.innerWidth>1000)closeMenu()})}
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',closeMenu));
