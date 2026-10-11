@@ -27,3 +27,51 @@ figure.image-block{margin:26px 0}
 figure.image-block img{box-shadow:var(--shadow)}
 .verified-stamp{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:var(--navy);margin:6px 0}
 @media(max-width:620px){.toc-nav ol{columns:1}}
+
+/* Site-wide content alignment: center readable copy, preserve data-entry and scan-heavy UI. */
+main h1,
+main h2,
+main h3,
+main h4,
+main p,
+main figcaption,
+main .callout,
+main .fact,
+main .step,
+main .icon-card,
+main .purpose-card,
+main .why-card,
+main .source-card,
+main .key-takeaways,
+main .related {
+  text-align: center;
+}
+
+main .actions,
+main .hero-actions {
+  justify-content: center;
+}
+
+/* These interfaces are easier and safer to scan with conventional alignment. */
+main .breadcrumbs,
+main table,
+main th,
+main td,
+main ul,
+main ol,
+main li,
+main .toc,
+main .toc-nav,
+main .steps-numbered,
+main .checklist,
+main .contact-form,
+main .contact-form-wrap,
+main .contact-form label,
+main .contact-form input,
+main .contact-form select,
+main .contact-form textarea,
+main .legal,
+main .legal p,
+main .legal li {
+  text-align: left;
+}
