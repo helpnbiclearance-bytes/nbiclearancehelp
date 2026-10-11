@@ -1,20 +1,21 @@
 /* Homepage introduction reconstructed from the supplied 1216 × 511 reference. */
 .hero {
-  height: 590px;
-  min-height: 590px;
+  height: auto;
+  min-height: 690px;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
   color: #111;
   text-align: center;
   background: #ffe4b8;
 }
 
 .hero .hero-reference {
-  width: 100%;
-  max-width: 1216px;
-  min-height: 590px;
+  width: min(1060px, calc(100% - 32px));
+  max-width: 1060px;
+  min-height: 690px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 18px 24px 50px;
+  box-sizing: border-box;
 }
 
 .hero .hero-reference h1 {
@@ -134,11 +135,12 @@
 
 .hero-intro-grid {
   display: grid;
-  grid-template-columns: 620px 300px;
-  align-items: start;
+  grid-template-columns: minmax(0, 620px) 300px;
+  align-items: center;
   justify-content: center;
   gap: 45px;
-  margin: 19px auto 0;
+  width: min(965px, 100%);
+  margin: 24px auto 0;
 }
 
 .hero-intro-copy {
@@ -163,7 +165,7 @@
   display: block;
   width: 260px;
   height: 260px;
-  margin: -3px auto 0;
+  margin: 0 auto;
   object-fit: contain;
 }
 
