@@ -10,16 +10,20 @@
 }
 
 .hero .hero-reference {
+  position: relative;
+  left: 50%;
   width: min(1060px, calc(100% - 32px));
   max-width: 1060px;
   min-height: 690px;
-  margin: 0 auto;
+  margin: 0;
   padding: 18px 24px 50px;
   box-sizing: border-box;
+  transform: translateX(-50%);
 }
 
 .hero .hero-reference h1 {
-  margin: 0;
+  width: min(960px, 100%);
+  margin: 0 auto;
   color: #681600;
   font-family: Poppins, sans-serif;
   font-size: 32px;
@@ -29,7 +33,8 @@
 }
 
 .hero .hero-reference .lead {
-  margin: 19px 0 12px;
+  width: min(960px, 100%);
+  margin: 19px auto 12px;
   color: #111;
   font-family: Poppins, sans-serif;
   font-size: 17px;
