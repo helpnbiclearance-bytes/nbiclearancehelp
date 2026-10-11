@@ -1,0 +1,228 @@
+/* Homepage introduction reconstructed from the supplied 1216 × 511 reference. */
+.hero {
+  height: 511px;
+  min-height: 511px;
+  padding: 0;
+  overflow: hidden;
+  color: #111;
+  text-align: center;
+  background: #ffe4b8;
+}
+
+.hero .hero-reference {
+  width: 100%;
+  max-width: 1216px;
+  min-height: 511px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero .hero-reference h1 {
+  margin: 0;
+  color: #681600;
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -.65px;
+}
+
+.hero .hero-reference .lead {
+  margin: 19px 0 12px;
+  color: #111;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+.hero .hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  padding: 0 24px;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  background: #751900;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 2px 0 rgba(77, 13, 0, .32);
+}
+
+.hero .hero-button-register {
+  width: 400px;
+}
+
+.hero .hero-button-login {
+  width: 280px;
+}
+
+.hero .hero-button span {
+  display: inline-grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  margin-right: 12px;
+  color: #751900;
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 23px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.hero .hero-button:hover,
+.hero .hero-button:focus-visible {
+  color: #fff;
+  text-decoration: none;
+  background: #5f1200;
+}
+
+.hero-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  width: 608px;
+  min-height: 56px;
+  margin: 18px auto 0;
+  padding: 10px 14px 9px;
+  color: #111;
+  font-family: Poppins, sans-serif;
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  background: #fffaf0;
+  border: 1px solid #eeb533;
+  border-left: 3px solid #eba900;
+  border-radius: 7px;
+}
+
+.hero-disclaimer .info-icon {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px 0 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  background: #0878bd;
+  border: 1px solid #07517d;
+}
+
+.hero-disclaimer a {
+  color: #7a1a00;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.hero-intro-grid {
+  display: grid;
+  grid-template-columns: 570px 300px;
+  align-items: start;
+  justify-content: center;
+  gap: 45px;
+  margin: 19px auto 0;
+}
+
+.hero-intro-copy {
+  padding-top: 0;
+}
+
+.hero-intro-copy p {
+  margin: 0;
+  color: #151515;
+  font-family: Poppins, sans-serif;
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+}
+
+.hero-intro-copy p + p {
+  margin-top: 26px;
+}
+
+.hero-registration-image {
+  display: block;
+  width: 260px;
+  height: 260px;
+  margin: -3px auto 0;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero .hero-reference {
+    min-height: 0;
+    padding: 12px 16px 28px;
+  }
+
+  .hero .hero-reference h1 {
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -.4px;
+  }
+
+  .hero .hero-reference .lead {
+    margin: 14px 0;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .hero .hero-button-register,
+  .hero .hero-button-login {
+    width: min(100%, 400px);
+  }
+
+  .hero .hero-button {
+    height: 44px;
+    font-size: 19px;
+  }
+
+  .hero-disclaimer {
+    width: min(100%, 608px);
+    margin-top: 17px;
+  }
+
+  .hero-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    margin-top: 22px;
+  }
+
+  .hero-intro-copy p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .hero-intro-copy p + p {
+    margin-top: 20px;
+  }
+
+  .hero-registration-image {
+    width: min(260px, 78vw);
+    height: auto;
+    margin-top: 10px;
+  }
+}
