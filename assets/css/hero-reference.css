@@ -1,7 +1,7 @@
 /* Homepage introduction reconstructed from the supplied 1216 × 511 reference. */
 .hero {
-  height: 535px;
-  min-height: 535px;
+  height: 590px;
+  min-height: 590px;
   padding: 0;
   overflow: hidden;
   color: #111;
@@ -12,7 +12,7 @@
 .hero .hero-reference {
   width: 100%;
   max-width: 1216px;
-  min-height: 535px;
+  min-height: 590px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -21,9 +21,9 @@
   margin: 0;
   color: #681600;
   font-family: Poppins, sans-serif;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 45px;
   letter-spacing: -.65px;
 }
 
@@ -31,9 +31,9 @@
   margin: 19px 0 12px;
   color: #111;
   font-family: Poppins, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 26px;
 }
 
 .hero-actions {
@@ -94,15 +94,15 @@
 .hero-disclaimer {
   display: flex;
   align-items: flex-start;
-  width: 650px;
+  width: 760px;
   min-height: 56px;
   margin: 18px auto 0;
   padding: 10px 14px 9px;
   color: #111;
   font-family: Poppins, sans-serif;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 25px;
   text-align: left;
   background: #fffaf0;
   border: 1px solid #eeb533;
@@ -134,7 +134,7 @@
 
 .hero-intro-grid {
   display: grid;
-  grid-template-columns: 570px 300px;
+  grid-template-columns: 620px 300px;
   align-items: start;
   justify-content: center;
   gap: 45px;
@@ -149,9 +149,9 @@
   margin: 0;
   color: #151515;
   font-family: Poppins, sans-serif;
-  font-size: 15.5px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -179,15 +179,15 @@
   }
 
   .hero .hero-reference h1 {
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 32px;
+    line-height: 42px;
     letter-spacing: -.4px;
   }
 
   .hero .hero-reference .lead {
     margin: 14px 0;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 17px;
+    line-height: 25px;
   }
 
   .hero .hero-button-register,
@@ -201,7 +201,7 @@
   }
 
   .hero-disclaimer {
-    width: min(100%, 650px);
+    width: min(100%, 760px);
     margin-top: 17px;
   }
 
@@ -212,8 +212,8 @@
   }
 
   .hero-intro-copy p {
-    font-size: 15px;
-    line-height: 23px;
+    font-size: 17px;
+    line-height: 26px;
   }
 
   .hero-intro-copy p + p {
